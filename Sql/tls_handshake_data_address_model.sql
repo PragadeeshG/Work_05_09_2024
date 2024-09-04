@@ -1,0 +1,17 @@
+create table if not exists tls_handshake_data_address_model(
+secure_socker_cipher_file_name Integer not null,
+client_hello varchar(255) null,
+server_hello varchar(255) null,
+key_exchange varchar(255) null,
+authentication varchar(255) null,
+session_key_generation varchar(255) null,
+key_exchange_algorithm varchar(255) null,
+bulk_encryption_algorithm varchar(255) null,
+proxy_balancer varchar(255) null,
+proxy_pass_match varchar(255) null,
+proxy_pass varchar(255) null,
+proxy_pass_reverse varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint tls_handshake_data_address_model_pk primary key(secure_socker_cipher_file_name));

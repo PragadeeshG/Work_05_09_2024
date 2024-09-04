@@ -1,0 +1,15 @@
+create table if not exists tls_handshake_data_info_model(
+secure_socker_cipher_file_name Integer not null,
+source_port varchar(255) null,
+destination_port varchar(255) null,
+secure_socker_cipher_status varchar(255) null,
+ack_length varchar(255) null,
+header_length varchar(255) null,
+control_engine varchar(255) null,
+control_flags varchar(255) null,
+ssl_proxy_check_peer_cn varchar(255) null,
+ssl_proxy_check_peer_name varchar(255) null,
+window_size varchar(255) null,
+check_sum varchar(255) null,
+urgent_pointers varchar(255) null,
+constraint tls_handshake_data_info_model_pk primary key(secure_socker_cipher_file_name));
